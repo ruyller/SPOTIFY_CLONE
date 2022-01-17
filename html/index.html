@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/img/fav.png" type="image/x-icon">
+  <title>Spotify</title>
+</head>
+
+<body>
+
+  <!----------------------------SIDEBAR INICIO------------------------------->
+  <div class="sidebar">
+    <div class="sidebar-wraper">
+
+      <!--Sidebar logo-->
+      <div class="sidebar_logo">
+        <img src="/img/logo.jpg" alt="logo">
+      </div>
+
+      <!--Sidebar menu-->
+      <div class="sidebar_menu">
+        <!--a tag i serve para importar os icones do all.min (font awesome)-->
+        <a href="#" class="sidebar_menu_selecionado"><i class="fas fa-home"></i> Inicio</a>
+        <a href="#"><i class="fas fa-search"></i> Buscar</a>
+        <a href="#"><i class="fas fa-database"></i> Biblioteca</a>
+      </div>
+      <!--Sidebar menu-->
+      <div class="sidebar_menu">
+        <p class="sidebar_menu_title">Playlists</p>
+
+        <div class="sidebar_menu_item">
+          <div class="sidebar_menu_item_componente">
+            +
+          </div>
+          <span>Criar Playlist</span>
+        </div>
+
+        <div class="sidebar_menu_item">
+          <img src="/img/icon.png" alt="curtidas">
+          <span>Músicas Curtidas</span>
+        </div>
+      </div>
+
+      <!--Sidebar Playlist-->
+      <div class="sidebar_playlist">
+        <a href="#">Playlist 1</a>
+        <a href="#">Playlist 1</a>
+        <a href="#">Playlist 1</a>
+        <a href="#">Playlist 1</a>
+        <a href="#">Playlist 1</a>
+      </div>
+
+      <div class="sidebar_playlist">
+        <a href="#">Playlist 2</a>
+        <a href="#">Playlist 2</a>
+        <a href="#">Playlist 2</a>
+        <a href="#">Playlist 2</a>
+        <a href="#">Playlist 2</a>
+      </div>
+
+      <div class="sidebar_playlist">
+        <a href="#">Playlist 3</a>
+        <a href="#">Playlist 3</a>
+        <a href="#">Playlist 3</a>
+        <a href="#">Playlist 3</a>
+        <a href="#">Playlist 3</a>
+      </div>
+    </div>
+  </div>
+  <!----------------------------SIDEBAR FIM---------------------------------->
+
+
+  <!----------------------------MAIN INICIO---------------------------------->
+
+  <div class="main">
+    <div class="main-wraper">
+
+      <div class="main_row">
+        <div class="main_row_title">
+          <h2>Paradas</h2>
+        </div>
+        <!--Capas-->
+        <div class="main_col">
+          <img src="/img/img1.jpg" alt="capa1">
+          <h3>Vem Verão</h3>
+          <p>Aqui vem a descrição da minha musica...</p>
+        </div>
+
+        <div class="main_col">
+          <img src="/img/img2.jpg" alt="capa1">
+          <h3>Dominguêra</h3>
+          <p>Aqui vem a descrição da minha musica...</p>
+        </div>
+
+        <div class="main_col">
+          <img src="/img/img3.jpg" alt="capa1">
+          <h3>Sol e Churrasco</h3>
+          <p>Aqui vem a descrição da minha musica...</p>
+        </div>
+
+        <div class="main_col">
+          <img src="/img/img4.jpg" alt="capa1">
+          <h3>Esquenta Sertanejo</h3>
+          <p>Aqui vem a descrição da minha musica...</p>
+        </div>
+
+        <div class="main_col">
+          <img src="/img/img5.jpg" alt="capa1">
+          <h3>Resenha na Laje</h3>
+          <p>Aqui vem a descrição da minha musica...</p>
+        </div>
+
+        <div class="main_col">
+          <img src="/img/img6.jpg" alt="capa1">
+          <h3>Top Brasil</h3>
+          <p>Aqui vem a descrição da minha musica...</p>
+        </div>
+
+        <div class="main_col">
+          <img src="/img/img7.jpg" alt="capa1">
+          <h3>Viral São Paulo</h3>
+          <p>Aqui vem a descrição da minha musica...</p>
+        </div>
+
+        <div class="main_col">
+          <img src="/img/img8.jpg" alt="capa1">
+          <h3>Viral Rio de Janeiro</h3>
+          <p>Aqui vem a descrição da minha musica...</p>
+        </div>
+
+        <div class="main_col">
+          <img src="/img/img9.jpg" alt="capa1">
+          <h3>Top 50 Global</h3>
+          <p>Aqui vem a descrição da minha musica...</p>
+        </div>
+        <!--Capas-->
+        <!--main row 2-->
+        <div class="main_row">
+          <div class="main_row_title">
+            <h2>Minhas Musicas</h2>
+          </div>
+
+          <div class="main_col" data-image="/img/img11.jpg" data-artist="System Of A Down" data- song="Hypnotize"
+            data-file="/assets/Hypnotize.mp3">
+            <img src="/img/img11.jpg" alt="capa1">
+            <h3>System Of A Down</h3>
+            <p>Hypnotize</p>
+          </div>
+
+          <div class="main_col" data-image="/img/img11.jpg" data-artist="System Of A Down" data- song="Holy Moutains"
+            data-file="/assets/Holy Mountains.mp3">
+            <img src="/img/img11.jpg" alt="capa1">
+            <h3>System Of A Down</h3>
+            <p>Holy Moutains</p>
+          </div>
+        </div>
+        <!----------------------------MAIN FIM---------------------------------->
+      </div>
+    </div>
+
+
+    <!----------------------------PLAYER INICIO---------------------------------->
+
+    <div class="player">
+      <div class="player_artist">
+        <!--essa div deve ficar vazia para ser manipulada por JS-->
+      </div>
+
+      <div class="player_control">
+        <div class="player_control_buttons">
+          <a href=""><i class="fas fa-backward"></i></a>
+          <a style="display: none;" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i></a>
+          <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+          <a href=""><i class="fas fa-forward"></i></a>
+        </div>
+
+        <div class="player_control_progress">
+          <div class="player_control_progress2">
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    <audio id="audioplayer" controls="">
+
+    </audio>
+    <span></span>
+
+
+
+
+
+
+
+
+
+
+
+    <!--importa os icones-->
+    <script src="/js/all.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
